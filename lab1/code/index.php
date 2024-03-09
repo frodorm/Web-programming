@@ -12,3 +12,21 @@ $order .= " and sauce, please";
 // Don't change the line below
 
 echo "\nYour order is: $very_bad_unclear_name.";
+
+// задание 2
+// \n в браузере не переносит строку, погуглил, на стэковерфло
+// написано использовать конструкцию <br/>
+$threeHundredBucks = 300;
+echo "<br/>$threeHundredBucks";
+
+echo "<br/>";
+
+$zeroPointThreeHundredBucks = 0.3;
+echo "$zeroPointThreeHundredBucks<br/>";
+
+echo 6 + 6;
+
+$last_month = 1187.23;
+$this_month = 1089.98;
+echo "<br/>";
+echo $last_month - $this_month;
