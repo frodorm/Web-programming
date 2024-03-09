@@ -30,3 +30,14 @@ $last_month = 1187.23;
 $this_month = 1089.98;
 echo "<br/>";
 echo $last_month - $this_month;
+echo"<br/>";
+// задание 11
+$num_languages = 4;
+$months = 11;
+
+$days = 16*$months;
+
+$days_per_language = $days / 4;
+
+echo $days_per_language;
+
