@@ -169,3 +169,51 @@ $my_num = printStringReturnNumber("1");
 echo "$my_num<br/>";
 
 // задание 16
+function increaseEnthusiasm($str)
+{
+    return $str."!";
+}
+
+echo increaseEnthusiasm("I love my mum"), "<br/>";
+
+function repeatThreeTimes($str)
+{
+    return $str.$str.$str;
+}
+
+echo repeatThreeTimes("pivo"), "<br/>";
+
+function cut($str, $howMuch = 10)
+{
+    return substr($str, 0, $howMuch);
+}
+
+function masElem($mas, $i = 0)
+{
+    echo $mas[$i], " ";
+    ++$i;
+    if($i < count($mas))
+    {
+        masElem($mas, $i);
+    }
+}
+masElem([1,2,3,4,5,6,6,7,7,8,9]);
+echo "<br/>";
+function sumOfDigits($digits)
+{
+    $sum = 0;
+    while ($digits > 9)
+    {
+        $sum = 0;
+        while ($digits > 0)
+        {
+            $elem = $digits % 10;
+            $sum += $elem;
+            $digits = (int)($digits / 10);
+        }
+        $digits = $sum;
+    }
+    return $sum;
+}
+echo sumOfDigits(123456789);
+
