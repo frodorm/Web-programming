@@ -45,3 +45,18 @@ echo "$days_per_language<br/>";
 // задание 12
 echo 8**2;
 
+// задание 13
+$my_num = 19;
+
+$answer = $my_num;
+
+$answer += 2;
+
+$answer *= 2;
+
+$answer -= 2;
+
+$answer /= 2;
+
+$answer -= $my_num;
+echo "<br/>$answer";
