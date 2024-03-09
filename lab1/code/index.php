@@ -158,3 +158,14 @@ for($i = 0; $i < count($iHaveArray); ++$i)
 }
 
 // задание 15
+function printStringReturnNumber($str)
+{
+    echo "$str<br/>";
+    return intval($str);
+}
+
+$my_num = printStringReturnNumber("1");
+
+echo "$my_num<br/>";
+
+// задание 16
