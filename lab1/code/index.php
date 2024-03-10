@@ -17,18 +17,18 @@ echo "\nYour order is: $very_bad_unclear_name.";
 // \n в браузере не переносит строку, погуглил, на стэковерфло
 // написано использовать конструкцию <br/>
 $threeHundredBucks = 300;
-echo "<br/>$threeHundredBucks";
+echo "\n$threeHundredBucks";
 
-echo "<br/>";
+echo "\n";
 
 $zeroPointThreeHundredBucks = 0.3;
-echo "$zeroPointThreeHundredBucks<br/>";
+echo "$zeroPointThreeHundredBucks\n";
 
 echo 6 + 6;
 
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo "<br/>",$last_month - $this_month,"<br/>";
+echo "\n",$last_month - $this_month,"\n";
 
 // задание 11
 $num_languages = 4;
@@ -38,7 +38,7 @@ $days = 16*$months;
 
 $days_per_language = $days / 4;
 
-echo "$days_per_language<br/>";
+echo "$days_per_language\n";
 
 // задание 12
 echo 8**2;
@@ -57,22 +57,22 @@ $answer -= 2;
 $answer /= 2;
 
 $answer -= $my_num;
-echo "<br/>$answer<br/>";
+echo "\n$answer\n";
 
 // задание 14
 $a = 10;
 $b = 3;
 $result = $a % $b;
-echo "$result<br/>";
+echo "$result\n";
 
 if($result === 0)
 {
     $result = $a/$b;
-    echo "Делится $result<br/>";
+    echo "Делится $result\n";
 }
 else
 {
-    echo "Не делится $result<br/>";
+    echo "Не делится $result\n";
 }
 
 $st = pow(2, 10);
@@ -86,7 +86,7 @@ foreach ($mas as $x)
     $sum += pow($x,2);
 }
 
-echo "<br/>", sqrt($sum);
+echo "\n", sqrt($sum);
 
 $sqrt1 = round(sqrt(379));
 $sqrt2 = round(sqrt(379),1);
@@ -100,7 +100,7 @@ $arr = ['floor' => $sqrtF, 'ceil' => $sqrtC];
 $min = min(4, -2, 5, 19, -130, 0, 10);
 $max = max(4, -2, 5, 19, -130, 0, 10);
 
-echo "<br/>", rand(1, 100), "<br/>";
+echo "\n", rand(1, 100), "\n";
 
 $randMas = [];
 for ($i = 0; $i < 10; ++$i)
@@ -126,7 +126,7 @@ foreach($absMas as $x)
     echo $x, " ";
 }
 
-echo "<br/>";
+echo "\n";
 $thirty = 30;
 $fedya = [];
 $n = 0;
@@ -151,7 +151,7 @@ for($i = 0; $i < count($iHaveArray); ++$i)
     $sum += $iHaveArray[$i];
     if($sum > 10)
     {
-        echo "<br/>$n<br/>";
+        echo "\n$n\n";
         break;
     }
     $n += 1;
@@ -160,13 +160,13 @@ for($i = 0; $i < count($iHaveArray); ++$i)
 // задание 15
 function printStringReturnNumber($str)
 {
-    echo "$str<br/>";
+    echo "$str\n";
     return intval($str);
 }
 
 $my_num = printStringReturnNumber("1");
 
-echo "$my_num<br/>";
+echo "$my_num\n";
 
 // задание 16
 function increaseEnthusiasm($str)
@@ -174,20 +174,19 @@ function increaseEnthusiasm($str)
     return $str."!";
 }
 
-echo increaseEnthusiasm("I love my mum"), "<br/>";
+echo increaseEnthusiasm("I love my mum"), "\n";
 
 function repeatThreeTimes($str)
 {
     return $str.$str.$str;
 }
 
-echo repeatThreeTimes("pivo"), "<br/>";
+echo repeatThreeTimes("pivo"), "\n";
 
 function cut($str, $howMuch = 10)
 {
     return substr($str, 0, $howMuch);
 }
-
 function masElem($mas, $i = 0)
 {
     echo $mas[$i], " ";
@@ -198,7 +197,7 @@ function masElem($mas, $i = 0)
     }
 }
 masElem([1,2,3,4,5,6,6,7,7,8,9]);
-echo "<br/>";
+echo "\n";
 function sumOfDigits($digits)
 {
     $sum = 0;
