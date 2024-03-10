@@ -214,5 +214,64 @@ function sumOfDigits($digits)
     }
     return $sum;
 }
-echo sumOfDigits(123456789);
+echo sumOfDigits(123456789), "\n";
+
+//задание 17
+$masX = ["x"];
+for ($i = 1; $i <= 10; ++$i)
+{
+    $masX[$i] = $masX[$i - 1]."x";
+}
+foreach ($masX as $x)
+{
+    echo "$x\n";
+}
+
+function arrayFill($elem, $count)
+{
+    $mas = [];
+    for($i = 0; $i < $count; ++$i)
+    {
+        $mas[$i] = $elem;
+    }
+    return $mas;
+}
+$tmp = arrayFill("x", 5);
+
+$mas = [[1 ,2 ,3], [4, 5], [6]];
+$sum = 0;
+foreach ($mas as $maklygin)
+{
+    foreach ($maklygin as $x)
+    {
+        $sum += $x;
+    }
+}
+
+$mas = [];
+$count = 1;
+for($i = 0; $i < 3; ++$i)
+{
+    for($j = 0; $j < 3; ++$j)
+    {
+        $mas[$i][$j] = $count;
+        ++$count;
+    }
+}
+
+$mas = [2, 5, 3, 9];
+$result = $mas[0]*$mas[1] + $mas[2]*$mas[3];
+echo "$result\n";
+
+$user = ['name' => "8", 'surname' => "S", 'patronymic' => "Marta!"];
+echo $user['surname'], " ", $user['name'], " ", $user['patronymic'];
+
+$date = ['year' => "2024", 'month' => "03", 'day' => "10"];
+echo "\n", $date['year'], "-", $date['month'], "-", $date['day'], "\n";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr), "\n";
+
+echo $arr[count($arr) - 1], " ", $arr[count($arr) - 2], "\n";
+
 
