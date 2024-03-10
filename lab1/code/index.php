@@ -342,3 +342,18 @@ while($i < 20)
     ++$i;
 }
 
+// задание 20
+$arr = [rand(1, 1000), rand(1, 1000), rand(1,1000), rand(1,1000)];
+$averageArithmetic = array_sum($arr) / count($arr);
+
+echo array_sum(range(1,100)), "\n";
+
+$arr = [rand(1, 1000), rand(1, 1000), rand(1,1000), rand(1,1000)];
+$roots = array_map('sqrt', $arr);
+
+$alphabet = range('a', 'z');
+$numbers = range(1, 26);
+$arr = array_combine($alphabet, $numbers);
+
+$str = '1234567890';
+$sum = array_sum(str_split($str, 2));
