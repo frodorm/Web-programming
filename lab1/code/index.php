@@ -329,6 +329,16 @@ else
 $arr = [1,2,3];
 if(count($arr) == 3)
 {
-    echo "\n",$arr[1] + $arr[2] + $arr[0];
+    echo "\n",$arr[1] + $arr[2] + $arr[0], "\n";
+}
+
+// задние 19
+$i = 0;
+$pyramid = "x";
+while($i < 20)
+{
+    echo "$pyramid\n";
+    $pyramid .="x";
+    ++$i;
 }
 
