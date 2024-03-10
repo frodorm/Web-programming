@@ -274,4 +274,61 @@ echo count($arr), "\n";
 
 echo $arr[count($arr) - 1], " ", $arr[count($arr) - 2], "\n";
 
+// задание 18
+function ifelse($a, $b)
+{
+    if($a + $b > 10)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+function comparison($a, $b)
+{
+    if($a === $b)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+$test = rand(0,1); //определил, чтобы в панели отладки не было строчки с ошибкой
+if ($test == 0) echo 'верно'; // сокращенная форма
+
+$age = rand(0, 200);
+if($age < 10 || $age > 99)
+{
+    echo "\nчисло age меньше 10 или больше 99";
+}
+else
+{
+    $sum = 0;
+    while($age > 0)
+    {
+        $sum += $age % 10;
+        $age = (int)($age/10);
+    }
+
+    if($sum <= 9)
+    {
+        echo "\nсумма цифр числа однозначна";
+    }
+    else
+    {
+        echo "\nсумма цифр числа двузначна";
+    }
+}
+
+$arr = [1,2,3];
+if(count($arr) == 3)
+{
+    echo "\n",$arr[1] + $arr[2] + $arr[0];
+}
 
