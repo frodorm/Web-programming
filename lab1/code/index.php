@@ -277,14 +277,7 @@ echo $arr[count($arr) - 1], " ", $arr[count($arr) - 2], "\n";
 // задание 18
 function ifelse($a, $b)
 {
-    if($a + $b > 10)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return ($a + $b > 10);
 }
 
 function comparison($a, $b)
@@ -327,7 +320,7 @@ else
 }
 
 $arr = [1,2,3];
-if(count($arr) == 3)
+if(3 === count($arr))
 {
     echo "\n",$arr[1] + $arr[2] + $arr[0], "\n";
 }
